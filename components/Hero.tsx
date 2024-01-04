@@ -2,15 +2,19 @@
 
 import classNames from "classnames";
 import { motion } from "framer-motion";
+import { scrollAnimation } from "@/constants/motion.constant";
 
 function Hero() {
   return (
-    <div
+    <motion.div
       className={classNames(
         "relative flex items-center justify-center flex-col h-screen w-full flex-grow"
         // "bg-dots bg-repeat bg-100"
         // "bg-hero-pop bg-contain bg-center bg-no-repeat 2xl:bg-auto"
       )}
+      initial="offscreen"
+      whileInView="onscreen"
+      variants={scrollAnimation}
     >
       <div className="self-center relative text-[70px] md:text-[100px] text-[#F2F2F2] z-30">
         <h1 className="relative top-7 md:top-10 text-center">Your Brand</h1>
@@ -35,7 +39,7 @@ function Hero() {
           transition={{ duration: 3, repeat: Infinity }}
         />
       </button>
-    </div>
+    </motion.div>
   );
 }
 
