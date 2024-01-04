@@ -11,9 +11,11 @@ export default function Home() {
       <Header />
       <Hero />
       <SecondSection />
-      <ThirdSection />
-      <FourthSection />
-      <FifthSection />
+      <div className="bg-dot bg-repeat">
+        <ThirdSection />
+        <FourthSection />
+        <FifthSection />
+      </div>
     </main>
   );
 }

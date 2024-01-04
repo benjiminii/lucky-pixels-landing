@@ -8,9 +8,8 @@ function Hero() {
   return (
     <motion.div
       className={classNames(
-        "relative flex items-center justify-center flex-col h-screen w-full flex-grow"
-        // "bg-dots bg-repeat bg-100"
-        // "bg-hero-pop bg-contain bg-center bg-no-repeat 2xl:bg-auto"
+        "relative flex items-center justify-center flex-col h-screen w-full flex-grow",
+        "bg-square bg-repeat"
       )}
       initial="offscreen"
       whileInView="onscreen"
@@ -26,7 +25,7 @@ function Hero() {
           className="absolute w-[100px] md:w-[150px] top-0 right-5 md:right-10 md:top-0"
         />
       </div>
-      <img src="/hero/pop.png" className="absolute w-2/3 z-10" />
+      <img src="/hero/pop.png" className="absolute w-[200%] md:w-2/3 z-10" />
       <button className="absolute bottom-5 right-5">
         <img
           src="/hero/arrow.png"

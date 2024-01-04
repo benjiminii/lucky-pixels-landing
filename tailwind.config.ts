@@ -12,6 +12,7 @@ const config: Config = {
         heroPop: "url('/hero/pop.png')",
         dots: "url('/dots.png')",
         dot: "url('/dot.png')",
+        square: "url('/hero/square.png')",
       }),
       backgroundSize: {
         "100": "10px",
