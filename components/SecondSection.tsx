@@ -2,7 +2,7 @@ function SecondSection() {
   return (
     <section
       className="grid md:grid-cols-2 p-10 text-white gap-6 items-center"
-      id={"2nd"}
+      id="2nd"
     >
       <div className="flex flex-col gap-6">
         <h2 className="text-[50px]">
