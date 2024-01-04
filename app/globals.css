@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 10rem;
+}
+
+/* ::selection {
   color: hsl(var(--pc));
   background: hsl(var(--p));
-}
+} */

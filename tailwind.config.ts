@@ -7,17 +7,20 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    color: {
-      main: "#d0f500",
-      secondary: "#a66cff",
-      dark: "#131313",
-      gray: "#e6e6e6",
-    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      backgroundImage: (theme) => ({
+        heroPop: "url('/hero/pop.png')",
+        dots: "url('/dots.png')",
+        dot: "url('/dot.png')",
+      }),
+      backgroundSize: {
+        "100": "10px",
+      },
+      colors: {
+        main: "#d0f500",
+        secondary: "#a66cff",
+        dark: "#131313",
+        gray: "#e6e6e6",
       },
     },
   },
