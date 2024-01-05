@@ -32,6 +32,14 @@ function Header() {
                   FAQ
                 </a>
               </li>
+              <li>
+                <a
+                  href="http://lucky-pixel.vercel.app/"
+                  className="hover:text-gray-300"
+                >
+                  VISIT
+                </a>
+              </li>
             </ul>
           </nav>
           <button className="block md:hidden">
@@ -84,6 +92,16 @@ function Header() {
                         onClick={closeDrawer}
                       >
                         FAQ
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="http://lucky-pixel.vercel.app/"
+                        className="hover:text-gray-300"
+                        onClick={closeDrawer}
+                      >
+                        VISIT
                       </a>
                     </li>
                   </ul>
