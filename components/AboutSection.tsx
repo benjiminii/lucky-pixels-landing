@@ -1,8 +1,8 @@
 import ScrollAnimationWrapper from "@/components/wrapper/MotionWrapper";
 
-function SecondSection() {
+function AboutSection() {
   return (
-    <section id="2nd">
+    <section id="about">
       <ScrollAnimationWrapper
         className={"grid md:grid-cols-2 p-10 text-white gap-6 items-center"}
       >
@@ -30,4 +30,4 @@ function SecondSection() {
   );
 }
 
-export default SecondSection;
+export default AboutSection;

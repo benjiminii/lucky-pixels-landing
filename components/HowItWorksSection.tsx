@@ -1,9 +1,9 @@
 import { contents } from "@/constants/thirdSection.constant";
 import ScrollAnimationWrapper from "@/components/wrapper/MotionWrapper";
 
-function ThirdSection() {
+function HowItWorksSection() {
   return (
-    <section id="3rd">
+    <section id="how-it-works">
       <ScrollAnimationWrapper className="flex flex-col p-10 justify-center gap-6 items-center">
         <h2 className="text-[50px]">Phase 1</h2>
         <div className="grid lg:grid-cols-3 gap-6 text-center">
@@ -25,4 +25,4 @@ function ThirdSection() {
   );
 }
 
-export default ThirdSection;
+export default HowItWorksSection;

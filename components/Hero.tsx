@@ -26,7 +26,7 @@ function Hero() {
         />
       </div>
       <img src="/hero/pop.png" className="absolute w-[200%] md:w-2/3 z-10" />
-      <button className="absolute bottom-5 right-5">
+      <div className="absolute bottom-5 right-5 overflow-hidden">
         <img
           src="/hero/arrow.png"
           className="w-[40px] absolute top-[70px] left-[80px]"
@@ -37,7 +37,7 @@ function Hero() {
           animate={{ rotate: 360 }}
           transition={{ duration: 3, repeat: Infinity }}
         />
-      </button>
+      </div>
     </motion.div>
   );
 }

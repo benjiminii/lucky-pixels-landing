@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
-import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
 const myFont = localFont({
   src: [
     {
@@ -46,7 +44,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="light" className="bg-black">
-      <body className={inter.className}>{children}</body>
+      <body className={myFont.className}>{children}</body>
     </html>
   );
 }

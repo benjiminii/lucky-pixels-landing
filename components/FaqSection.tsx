@@ -3,7 +3,7 @@ import ScrollAnimationWrapper from "@/components/wrapper/MotionWrapper";
 
 function FifthSection() {
   return (
-    <section id="5th">
+    <section id="faq">
       <ScrollAnimationWrapper className="p-10 relative flex w-full">
         <div className="grid lg:grid-cols-5 w-full gap-6 z-10">
           <div className="col-span-2 flex flex-col gap-10">

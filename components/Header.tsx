@@ -13,22 +13,22 @@ function Header() {
           <nav className="hidden md:flex text-main text-lg font-light mr-6">
             <ul className="flex space-x-10">
               <li>
-                <a href="#2nd" className="hover:text-gray-300">
+                <a href="#about" className="hover:text-gray-300">
                   About
                 </a>
               </li>
               <li>
-                <a href="#3rd" className="hover:text-gray-300">
+                <a href="#how-it-works" className="hover:text-gray-300">
                   How it works
                 </a>
               </li>
               <li>
-                <a href="#4th" className="hover:text-gray-300">
+                <a href="#roadmap" className="hover:text-gray-300">
                   Roadmap
                 </a>
               </li>
               <li>
-                <a href="#5th" className="hover:text-gray-300">
+                <a href="#faq" className="hover:text-gray-300">
                   FAQ
                 </a>
               </li>
@@ -60,7 +60,7 @@ function Header() {
                   <ul className="flex flex-col gap-10">
                     <li>
                       <a
-                        href="#2nd"
+                        href="#about"
                         className="hover:text-gray-300"
                         onClick={closeDrawer}
                       >
@@ -69,7 +69,7 @@ function Header() {
                     </li>
                     <li>
                       <a
-                        href="#3rd"
+                        href="#how-it-works"
                         className="hover:text-gray-300"
                         onClick={closeDrawer}
                       >
@@ -78,7 +78,7 @@ function Header() {
                     </li>
                     <li>
                       <a
-                        href="#4th"
+                        href="#roadmap"
                         className="hover:text-gray-300"
                         onClick={closeDrawer}
                       >
@@ -87,7 +87,7 @@ function Header() {
                     </li>
                     <li>
                       <a
-                        href="#5th"
+                        href="#faq"
                         className="hover:text-gray-300"
                         onClick={closeDrawer}
                       >
