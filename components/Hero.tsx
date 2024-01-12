@@ -3,6 +3,10 @@
 import classNames from "classnames";
 import { motion } from "framer-motion";
 import { scrollAnimation } from "@/constants/motion.constant";
+import CustomFont from "next/font/local";
+const customFont1 = CustomFont({
+  src: "../public/grotesque-font/RG-StandardSemibold.ttf",
+});
 
 function Hero() {
   return (
@@ -15,7 +19,10 @@ function Hero() {
       whileInView="onscreen"
       variants={scrollAnimation}
     >
-      <div className="self-center relative text-[70px] md:text-[100px] text-[#F2F2F2] z-30">
+      <div
+        className="self-center relative text-[70px] md:text-[100px] text-[#F2F2F2] z-30"
+        style={customFont1.style}
+      >
         <h1 className="relative top-7 md:top-10 text-center">Your Brand</h1>
         <h1 className="relative bottom-7 md:bottom-10 text-center">
           Our Canvas.

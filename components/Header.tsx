@@ -1,10 +1,18 @@
 "use client";
 
+import CustomFont from "next/font/local";
+const customFont1 = CustomFont({
+  src: "../public/grotesque-font/RG-SpaciousBook.ttf",
+});
+
 function Header() {
   const closeDrawer = () => document?.getElementById("drawer")?.click();
 
   return (
-    <header className="w-full bg-dark py-2 fixed top-0 z-50">
+    <header
+      className="w-full bg-dark py-2 fixed top-0 z-50"
+      style={customFont1.style}
+    >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#" className="hover:text-gray-300">
           <img src="favicon.ico" alt="Favicon" />
@@ -27,7 +35,6 @@ function Header() {
                   Roadmap
                 </a>
               </li>
-              \
               <li>
                 <a
                   href="http://lucky-pixel.vercel.app/"

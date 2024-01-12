@@ -1,4 +1,14 @@
 import ScrollAnimationWrapper from "@/components/wrapper/MotionWrapper";
+import CustomFont from "next/font/local";
+const customFont1 = CustomFont({
+  src: "../public/grotesque-font/RG-StandardSemibold.ttf",
+});
+const customFont2 = CustomFont({
+  src: "../public/grotesque-font/RG-StandardBold.ttf",
+});
+const customFont3 = CustomFont({
+  src: "../public/grotesque-font/RG-StandardBook.ttf",
+});
 
 function AboutSection() {
   return (
@@ -7,11 +17,17 @@ function AboutSection() {
         className={"grid md:grid-cols-2 p-10 text-white gap-6 items-center"}
       >
         <div className="flex flex-col gap-6">
-          <h2 className="text-[50px]">
-            Welcome to <span className="text-main">Lucky Pixels</span>, where
-            advertising meets engagement!
+          <h2 className="text-[50px]" style={customFont1.style}>
+            Welcome to{" "}
+            <span className="text-main" style={customFont2.style}>
+              Lucky Pixels
+            </span>
+            , where advertising meets engagement!
           </h2>
-          <div className="flex flex-col md:flex-row gap-3">
+          <div
+            className="flex flex-col md:flex-row gap-3"
+            style={customFont3.style}
+          >
             <span>
               We redefine advertising by providing a unique canvas for your
               brand. Each of our 10,000 individual blocks is an exclusive

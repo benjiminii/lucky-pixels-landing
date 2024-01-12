@@ -5,7 +5,7 @@ export const contents = [
     image: "/third_section/block.png",
   },
   {
-    desc: "We are committed to providing you with the best possible experience. Our team of experts will work with you to create a custom design that will maximize your brand's impact. We will also provide you with a detailed report of your campaign's performance.",
+    desc: "Elevate your brand with a captivating visual identity! Showcase your brand logo and unleash your creativity to make it truly stand out. The more appealing your design, the greater the attraction it will garner. Your creativity, your brand, your impact.",
     title: "MORE DETAILS",
     image: "/third_section/head.png",
   },
