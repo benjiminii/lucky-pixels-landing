@@ -27,11 +27,7 @@ function Header() {
                   Roadmap
                 </a>
               </li>
-              <li>
-                <a href="#faq" className="hover:text-gray-300">
-                  FAQ
-                </a>
-              </li>
+              \
               <li>
                 <a
                   href="http://lucky-pixel.vercel.app/"
@@ -83,15 +79,6 @@ function Header() {
                         onClick={closeDrawer}
                       >
                         Roadmap
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="#faq"
-                        className="hover:text-gray-300"
-                        onClick={closeDrawer}
-                      >
-                        FAQ
                       </a>
                     </li>
 
