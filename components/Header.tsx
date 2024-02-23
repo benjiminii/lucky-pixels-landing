@@ -15,7 +15,7 @@ function Header() {
     >
       <div className="container mx-auto flex items-center justify-between">
         <a href="#" className="hover:text-gray-300">
-          <img src="favicon.ico" alt="Favicon" />
+          <img src="logo.svg" alt="Favicon" width={75} height={75} />
         </a>
         <div className="flex items-center gap-x-3">
           <nav className="hidden md:flex text-main text-lg font-light mr-6">
@@ -37,7 +37,7 @@ function Header() {
               </li>
               <li>
                 <a
-                  href="http://lucky-pixel.vercel.app/"
+                  href="https://luckypixels.io/"
                   className="hover:text-gray-300"
                 >
                   VISIT
@@ -91,7 +91,7 @@ function Header() {
 
                     <li>
                       <a
-                        href="http://lucky-pixel.vercel.app/"
+                        href="https://www.luckypixels.io/"
                         className="hover:text-gray-300"
                         onClick={closeDrawer}
                       >
