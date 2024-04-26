@@ -6,8 +6,8 @@ const myFont = localFont({
   src: [
     {
       path: "../public/grotesque-font/RG-SlimBook.ttf",
-      weight: "300",
-      style: "light",
+      weight: "200",
+      style: "normal",
     },
     {
       path: "../public/grotesque-font/RG-StandardMedium.ttf",
@@ -15,19 +15,14 @@ const myFont = localFont({
       style: "normal",
     },
     {
-      path: "../public/grotesque-font/RG-StandardMediumItalic.ttf",
-      weight: "400",
-      style: "italic",
+      path: "../public/grotesque-font/RG-StandardSemibold.ttf",
+      weight: "600",
+      style: "normal",
     },
     {
       path: "../public/grotesque-font/RG-StandardBold.ttf",
       weight: "700",
       style: "normal",
-    },
-    {
-      path: "../public/grotesque-font/RG-StandardBoldItalic.ttf",
-      weight: "700",
-      style: "italic",
     },
   ],
 });

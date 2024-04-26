@@ -10,7 +10,7 @@ function Header() {
 
   return (
     <header
-      className="w-full bg-dark py-2 fixed top-0 z-50"
+      className="w-full bg-dark py-4 fixed top-0 z-50"
       style={customFont1.style}
     >
       <div className="container mx-auto flex items-center justify-between">

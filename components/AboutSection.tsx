@@ -1,46 +1,54 @@
 import ScrollAnimationWrapper from "@/components/wrapper/MotionWrapper";
-import CustomFont from "next/font/local";
-const customFont1 = CustomFont({
-  src: "../public/grotesque-font/RG-StandardSemibold.ttf",
-});
-const customFont2 = CustomFont({
-  src: "../public/grotesque-font/RG-StandardBold.ttf",
-});
-const customFont3 = CustomFont({
-  src: "../public/grotesque-font/RG-StandardBook.ttf",
-});
+import Image from "next/image";
+import welcomeOneLoop from "@/public/about/welcomeOneLoop.gif";
 
 function AboutSection() {
   return (
     <section id="about">
-      <ScrollAnimationWrapper
-        className={"grid md:grid-cols-2 p-10 text-white gap-6 items-center"}
-      >
-        <div className="flex flex-col gap-6">
-          <h2 className="text-[50px]" style={customFont1.style}>
-            Welcome to{" "}
-            <span className="text-main" style={customFont2.style}>
-              Lucky Pixels
-            </span>
-            , where advertising meets engagement!
-          </h2>
-          <div
-            className="flex flex-col md:flex-row gap-3"
-            style={customFont3.style}
-          >
-            <span>
-              We redefine advertising by providing a unique canvas for your
-              brand. Each of our 10,000 individual blocks is an exclusive
-              opportunity for you to showcase your message to the world.
-            </span>
-            <span>
-              With a guaranteed minimum of 10,000 clicks per block, your message
-              will resonate far and wide. This is not just ad space; it's a
-              dynamic platform designed to elevate your brand's visibility.
-            </span>
+      <ScrollAnimationWrapper className="flex flex-col p-10 justify-center gap-6 items-center relative">
+        <Image
+          src={welcomeOneLoop}
+          alt="Welcome"
+          width={welcomeOneLoop.width}
+          height={welcomeOneLoop.height}
+          className="max-w-[800px] w-screen"
+          loading="lazy"
+        />
+
+        <img
+          src="/about/globe.png"
+          className="w-[200px] md:w-[300px] lg:w-[500px] absolute top-[70px] -left-[200px]"
+        />
+        <img
+          src="/about/globe2.png"
+          className="w-[150px] md:w-[250px] lg:w-[400px] absolute top-[70%] left-[85%]"
+        />
+        <div className="p-10 border border-white flex flex-col gap-3 bg-black shadow-[9px_9px_rgba(255,255,255)] max-w-[900px] text-center mb-20">
+          <div className="flex flex-col gap-3 text-3xl items-center">
+            <div className="flex gap-20 items-center">
+              <img src="/about/star.png" />
+              <p>About</p>
+              <img src="/about/star.png" />
+            </div>
+            <p>
+              Lucky Pixels is inspired by the groundbreaking Million Dollar
+              Homepage of 2005, a students ingenious solution to cover
+              university ex-penses. Fast forward fifteen years, Lucky Pixels
+              reimagines this success with a twist - a gamified approach where
+              users earn points for interacting with ads. Online advertising can
+              be annoying, but Lucky Pixels is changing that. Players clicking
+              on ads and engaging is super effective, as a brand logo alone can
+              make a big impact. After Phase 2, we share valuable player data
+              with advertisers for targeted campaigns. Join us in crafting a
+              captivating environment for advertisers and audiences alike.
+            </p>
           </div>
         </div>
-        <img src="second_section.png" />
+        <div className="uppercase text-2xl flex gap-20">
+          <img src="/about/arrow.png" />
+          Scroll to continue
+          <img src="/about/arrow.png" />
+        </div>
       </ScrollAnimationWrapper>
     </section>
   );
